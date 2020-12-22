@@ -20,5 +20,5 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push DOCKER_HUB_ACCOUNT/simple-reverse-proxy
+  - docker push wjclemens69/reverseproxy
 
